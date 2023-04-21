@@ -1,0 +1,14 @@
+---
+import Header from "./Header.astro";
+import Logo from "./Logo.astro";
+import Footer from "./Footer.astro";
+
+const { title } = Astro.props
+---
+<div id="content-wrapper">
+  <Header />
+  <Logo />
+  <h1>{title}</h1>
+  <slot />
+  <Footer />
+</div>
